@@ -10,7 +10,6 @@ import rehypeRaw from "rehype-raw"
 import { GetFolderInformation } from "@/utils/guides-page-helper"
 import { getGuideStatus } from "@/config/newGuides"
 import { loadGuideMetadataServer, GuideMetadata } from "@/utils/guide-metadata"
- 
 
 export type FileTitlesType = {
   title: string
@@ -35,7 +34,6 @@ export default async function GuidePage({
   // Try to render as a file (with .md or .mdx extension)
   let curFile = null
   let actualFilePath = curPath
-
 
   // If path doesn't already have an extension, try both .md and .mdx
   if (!curPath.includes(".md")) {
